@@ -53,7 +53,14 @@ export default function Home() {
       <p><b>ZEE Balance : </b>{zeeBalance}</p>
       <br/>
       <hr/>
-      {access ? <><h1><b>Welcome to ZEEDAO!</b></h1> <br/><p>Check weekly for blog posts covering all the new crypto tech news.</p></> : <span>You need 2 ZEE coins to get access to the blogs</span>}
+      {access ? <><h1><b>Welcome to ZEEDAO!</b></h1> <br/><p>Check weekly for blog posts covering all the new crypto tech news.</p></> : 
+      <>
+      <h1>My 2cents on crypto only costs 2 ZEE coins!</h1> 
+      <br/> 
+      <p>Grab them here to get access to my blogs covering latest on all crypto tech news.</p>
+      <br/>
+      <a target="_blank" href="https://app.sushi.com/swap?inputCurrency=&outputCurrency=0x76df17E2Ac56ba739Ce374dd23eCcFa863fB4902" className="py-2 text-center mt-10 mb-4 text-lg font-bold text-white rounded-lg w-56 bg-blue-600 hover:bg-blue-800">Buy ZEE Coin</a>
+      </>}
     </div>
   )
 }
