@@ -51,8 +51,9 @@ export default function Home() {
       <button onClick={connect} className="py-2 mt-20 mb-4 text-lg font-bold text-white rounded-lg w-56 bg-blue-600 hover:bg-blue-800">Connect to MetaMask</button>
       {active ? <span>Connected with <b>{account}</b></span> : <span>Not connected</span>}
       <p><b>ZEE Balance :</b>{zeeBalance}</p>
-      <h2>Blog</h2>
-      {access ? <span>Check weekly for new blog drops. Welcome to ZEEDAO!</span> : <span>You need 2 ZEE coins to get access to the blogs</span>}
+      <br/>
+      <hr/>
+      {access ? <><h1><b>Welcome to ZEEDAO!</b></h1> <br/><p>Check weekly for blog posts covering all the new crypto tech news.</p></> : <span>You need 2 ZEE coins to get access to the blogs</span>}
     </div>
   )
 }
